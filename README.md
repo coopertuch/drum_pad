@@ -66,3 +66,12 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `npm run build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
+### To-Do
+
+- Trigger events w/ key press
+- Import sounds
+- Link sounds to keypress
+- Create new components for sound categories
+- Styling
+- Visualizer
