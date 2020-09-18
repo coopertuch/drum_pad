@@ -1,5 +1,6 @@
 import React from "react";
 import "./bass.css";
+import "./sounds/kit1";
 
 let Bass = () => {
   // variables
@@ -52,14 +53,17 @@ let Bass = () => {
   // body
   return (
     <div>
-      <button onClick={playSound1}>One</button>
-      <button onClick={playSound2}>Two</button>
-      <button onClick={playSound3}>Three</button>
-      <button onClick={playSound4}>Four</button>
-      <button onClick={playSound5}>Five</button>
-      <button onClick={playSound6}>Six</button>
-      <button onClick={playSound7}>Seven</button>
-      <button onClick={playSound8}>Eight</button>
+      <div onClick={playSound1}>
+        One
+        <audio ref="audio_tag" src="./sounds/kit1/kick.wav" autoPlay></audio>
+      </div>
+      <div onClick={playSound2}>Two</div>
+      <div onClick={playSound3}>Three</div>
+      <div onClick={playSound4}>Four</div>
+      <div onClick={playSound5}>Five</div>
+      <div onClick={playSound6}>Six</div>
+      <div onClick={playSound7}>Seven</div>
+      <div onClick={playSound8}>Eight</div>
     </div>
   );
 };

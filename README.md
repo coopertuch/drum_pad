@@ -69,7 +69,6 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
 
 ### To-Do
 
-- Trigger events w/ key press
 - Import sounds
 - Link sounds to keypress
 - Create new components for sound categories
