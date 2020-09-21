@@ -1,34 +1,27 @@
 import React from "react";
 import "./bass.css";
 
+import kick from "./sounds/kick.wav";
+import snare from "./sounds/snare.wav";
+import hihat from "./sounds/hihat.wav";
+import sticksnare from "./sounds/sticksnare.wav";
+import tom1 from "./sounds/tom1.wav";
+import tom2 from "./sounds/tom2.wav";
+import clap from "./sounds/clap.wav";
+import cymbal from "./sounds/cymbal.wav";
+
 let Bass = () => {
-  // variables
-  let sound1 = new Audio(
-    "https://www.soundsnap.com/streamers/play.php?id=1600722510.1171:81396bbcf9a8cb6daa1697857356e9ee8871ce4b:cd9c03d1d835a27942cd380d2582b29e0acbbb4f61d5f2b3bf4349c857e3e32a4214df5efb39cc0bccf02f63ac920b211e022e480d568eb6de2f1c83fd84a9721b8e0ac5a68dedde0743ead5a057f1078c4f60c9ab3546d184549604d054cf82da809b363fdc1cdf0079de967841f0b0577198ae5a387f971d11455264aa17ef43b295435ab8d608abade496ef9beec5425dc8d1c8f73348d3206660fff60f89160fa959412888fe9606169cbace6eb5cdc11558ae25bd154f4cf4888cb6b6f88f4a8f0d0a51c501ca9e2cb931fbbdf995304316ac0725e3d1b10a894cc6b3e01e8439cc877ad71d4d49a241ecb7bc2fff7ff45104e3f0e2c09e683c73930eca11814748c02c115233a0085c2887c8b2c9360880d43280e8d87ade14a202f34c"
-  );
-  let sound2 = new Audio(
-    "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
-  );
-  let sound3 = new Audio(
-    "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
-  );
-  let sound4 = new Audio(
-    "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
-  );
-  let sound5 = new Audio(
-    "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
-  );
-  let sound6 = new Audio(
-    "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
-  );
-  let sound7 = new Audio(
-    "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
-  );
-  let sound8 = new Audio(
-    "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
-  );
   // events
   document.addEventListener("keydown", handleKeyDown);
+  // variables
+  let sound1 = new Audio(kick);
+  let sound2 = new Audio(snare);
+  let sound3 = new Audio(hihat);
+  let sound4 = new Audio(sticksnare);
+  let sound5 = new Audio(tom1);
+  let sound6 = new Audio(tom2);
+  let sound7 = new Audio(clap);
+  let sound8 = new Audio(cymbal);
   // functions
   function playSound1() {
     sound1.pause();
