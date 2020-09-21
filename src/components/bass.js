@@ -1,35 +1,58 @@
 import React from "react";
 import "./bass.css";
-import "./sounds/kit1";
 
 let Bass = () => {
   // variables
+  let sound1 = new Audio(
+    "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
+  );
+  let sound2 = new Audio(
+    "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
+  );
+  let sound3 = new Audio(
+    "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
+  );
+  let sound4 = new Audio(
+    "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
+  );
+  let sound5 = new Audio(
+    "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
+  );
+  let sound6 = new Audio(
+    "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
+  );
+  let sound7 = new Audio(
+    "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
+  );
+  let sound8 = new Audio(
+    "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
+  );
   // events
   document.addEventListener("keydown", handleKeyDown);
   // functions
   function playSound1() {
-    console.log("Played 1");
+    sound1.play();
   }
   function playSound2() {
-    console.log("Played 2");
+    sound2.play();
   }
   function playSound3() {
-    console.log("Played 3");
+    sound3.play();
   }
   function playSound4() {
-    console.log("Played 4");
+    sound4.play();
   }
   function playSound5() {
-    console.log("Played 5");
+    sound5.play();
   }
   function playSound6() {
-    console.log("Played 6");
+    sound6.play();
   }
   function playSound7() {
-    console.log("Played 7");
+    sound7.play();
   }
   function playSound8() {
-    console.log("Played 8");
+    sound8.play();
   }
   function handleKeyDown(e) {
     if (e.key === "a") {
@@ -55,7 +78,7 @@ let Bass = () => {
     <div>
       <div onClick={playSound1}>
         One
-        <audio ref="audio_tag" src="./sounds/kit1/kick.wav" autoPlay></audio>
+        <audio id="sound1"></audio>
       </div>
       <div onClick={playSound2}>Two</div>
       <div onClick={playSound3}>Three</div>
