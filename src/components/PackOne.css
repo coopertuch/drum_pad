@@ -7,5 +7,9 @@
   height: 50px;
   width: 50px;
   border: 1px solid white;
-  align-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: navy;
 }

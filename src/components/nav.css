@@ -1,12 +1,15 @@
 .nav-container {
   display: flex;
-  margin-bottom: 35px;
+  margin-bottom: 40px;
 }
 
-.nav-container > button {
+.nav-container > div {
   padding: 10px;
   height: 50px;
   width: 100px;
   border: 1px solid white;
-  align-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }

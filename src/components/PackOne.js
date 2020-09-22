@@ -1,5 +1,5 @@
 import React from "react";
-import "./bass.css";
+import "./PackOne.css";
 
 import kick from "./sounds/kick.wav";
 import snare from "./sounds/snare.wav";
@@ -10,7 +10,7 @@ import tom2 from "./sounds/tom2.wav";
 import clap from "./sounds/clap.wav";
 import cymbal from "./sounds/cymbal.wav";
 
-let Bass = () => {
+let PackOne = () => {
   // events
   document.addEventListener("keydown", handleKeyDown);
   // variables
@@ -89,4 +89,4 @@ let Bass = () => {
   );
 };
 
-export default Bass;
+export default PackOne;
